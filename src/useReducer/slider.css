@@ -1,0 +1,44 @@
+/* .spinner{
+  display: flex;
+  text-align: center;
+  border :8px solid grey;
+  border-radius: 50%;;
+  border-top:  8px solid blue;
+  width: 80px;
+  height : 80px;
+  animation: 3s linear 0s 3 spinner;
+transition: 1s lenear;
+}
+.spinner:hover{
+transform: rotate(360deg);
+}
+@keyframes spinner{
+0%{
+  transform: rotate(0deg);
+}
+25%{
+  transform: rotate(270deg);
+  border-top-color:red ;
+}
+100%{
+  transform: rotate(360deg);
+}
+} */
+.app {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.progress-container {
+  height: 150px;
+  width: 150px;
+}
+.action-container {
+  display: flex;
+  gap: 15px;
+}
+.action-container button {
+  font-size: 26px;
+}

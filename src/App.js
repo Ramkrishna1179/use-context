@@ -4,7 +4,9 @@ import { createContext } from "react";
 import CompD from "./CompD";
 import CompA from "./CompA";
 import CompE from "./CompE";
+import Slider from "./useReducer/slider";
 import Counter from './useReducer/reduce1'
+import CircularProgress from "./useReducer/slider1";
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css'
 const Value = createContext();
 function App(props) {
@@ -21,6 +23,15 @@ function App(props) {
       <br />
       <br />
       <Counter />
+      <br />
+      <br />
+      <br />
+      <Slider />
+      <br />
+      <br />
+      <br />
+      <br />
+      <CircularProgress />
     </div>
   );
 }

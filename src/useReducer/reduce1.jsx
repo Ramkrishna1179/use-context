@@ -1,4 +1,3 @@
-
 import React, { useReducer } from "react";
 const initialvalue = 0;
 function myfuncton(state, action) {
@@ -9,10 +8,8 @@ function myfuncton(state, action) {
     return state - 1;
   }
 }
-
 function Counter() {
-  const [state, dispatch] = useReducer(myfuncton, initialvalue);
-
+  const [state, dispatch] = useReducer(myfuncton,initialvalue);
   return (
     <>
       <p>{state}</p>
@@ -23,7 +20,6 @@ function Counter() {
       >
         Increment
       </button>
-
       <button
         onClick={() => {
           dispatch({ type: "decrement" });
@@ -34,5 +30,5 @@ function Counter() {
     </>
   );
 }
-
 export default Counter;
+// 455787628094;

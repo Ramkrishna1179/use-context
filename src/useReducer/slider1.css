@@ -1,0 +1,32 @@
+.circular-progress-container {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  cursor: pointer;
+}
+
+.circular-progress {
+  width: 100px;
+  height: 100px;
+}
+
+.background {
+  fill: none;
+  stroke: #ddd;
+  stroke-width: 5;
+}
+
+.progress {
+  fill: none;
+  stroke: #007bff;
+  stroke-width: 5;
+  stroke-linecap: round;
+  stroke-dasharray: 0 283;
+  transition: stroke-dasharray 0.5s ease-in-out;
+}
+
+.count {
+  font-size: 24px;
+  text-anchor: middle;
+  dominant-baseline: middle;
+}
