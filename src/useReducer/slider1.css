@@ -1,4 +1,4 @@
-.circular-progress-container {
+/* .circular-progress-container {
   width: 100px;
   height: 100px;
   position: relative;
@@ -29,4 +29,62 @@
   font-size: 24px;
   text-anchor: middle;
   dominant-baseline: middle;
+} */
+
+
+
+
+
+
+
+/* 
+
+
+#circle:hover {
+  cursor: pointer;
+}
+
+#circle.clicked {
+  stroke: red;
+  transition: stroke-dasharray 0.5s ease-in-out;
+  stroke-dasharray: 0, 251.2;
+  stroke-dashoffset: 0;
+}
+
+#circle.clicked #count {
+  fill: red;
+}
+
+#circle.clicked:hover {
+  cursor: default;
+}
+
+#count {
+  fill: #000;
+}
+
+#count:hover {
+  cursor: default;
+}
+
+#circle.clicked:hover #count {
+  fill: #fff;
+} */
+
+
+
+
+
+ 
+/* .circle {
+  transition: stroke 0.5s ease-out;
+}
+
+.circle.clicked {
+  stroke: red;
+}  */
+
+
+circle {
+  transition: stroke .3s  ease-out;
 }

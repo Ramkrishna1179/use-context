@@ -1,17 +1,21 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Value } from "./App";
-
-const CompD = ()=>{
-
-  return(
+const CompD = () => {
+  const {state,setState} = useContext(Value)
+ const handleClick = ()=>{
+    setState({name:"Krishna yadav",profession:'As u wish',designation:'Kuchh bhi chalega',ctc:"Bahut lagega"})
+  }
+  return (
     <>
-     <Value.Consumer> 
-     {(val)=>{
-     return <h1> <em>CompE This output is coming by Context-API :-</em> CompD :-{val}</h1>
-     }}
-       
-     </Value.Consumer>  
+     <ol className="text-start">
+     <li>Name:- {state.name}</li>
+     <li>Profession:- {state.profession}</li>
+     <li>Designation:- {state.designation}</li>
+     <li>CTC:- <strong> {state.ctc}</strong></li>
+     <br />
+     <button onClick={handleClick}>Update data</button>
+     </ol>
     </>
-  )
+  );
 };
-export default CompD
+export default CompD;

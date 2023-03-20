@@ -1,12 +1,10 @@
 import React from "react";
 import CompB from "./CompB";
- const  CompA =(props)=>{
-
-  return(
-      
+const CompA = (props) => {
+  return (
     <>
-    <CompB data={props.data} />
+      <CompB data={props.data} />
     </>
-  )
-}
-export default CompA
+  );
+};
+export default CompA;
