@@ -11,19 +11,16 @@ export default function UR1() {
 
     return () => clearInterval(intervalRef);
   }, []);
-
   return (
     <div className="m-5">
       <p>Count: {count}</p>
       <button onClick={() => clearInterval(intervalRef)}>Stop</button>
     </div>
   );
-}
-
+};
 function UR2() {
   const [count, setCount] = useState(0);
   const intervalRef = useRef(null);
-
   useEffect(() => {
     intervalRef.current = setInterval(() => {
       setCount((count) => count + 1);
@@ -51,7 +48,7 @@ const UR3 = () => {
     console.log(val);
     val.current.style.color = "orange";
     val.current.style.backgroundColor = "teal";
-    val.current.style.textAlign ="center"
+    val.current.style.textAlign = "center";
     val.current.focus();
   };
 
@@ -64,8 +61,8 @@ const UR3 = () => {
           newData(e.target.value);
         }}
         value={data}
-      />-
-      <button onClick={handleClick}>Click only here not anywhere</button>
+      />
+      -<button onClick={handleClick}>Click only here not anywhere</button>
     </>
   );
 };

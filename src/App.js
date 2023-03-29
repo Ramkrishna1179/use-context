@@ -7,6 +7,7 @@ import CompE from "./CompE";
 import Slider from "./useReducer/slider";
 import Counter from "./useReducer/reduce1";
 import CircularProgress from "./useReducer/slider1";
+import ComplexComponent from "./useReducer/useReducer";
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 const Value = createContext();
 
@@ -40,6 +41,10 @@ function App(props) {
       <br />
       <br />
       <CircularProgress />
+      <br />
+      <br />
+      <br />
+      <ComplexComponent />
       <br />
       <br />
       <br />

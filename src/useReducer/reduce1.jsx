@@ -9,7 +9,7 @@ function myfuncton(state, action) {
   }
 }
 function Counter() {
-  const [state, dispatch] = useReducer(myfuncton,initialvalue);
+  const [state, dispatch] = useReducer(myfuncton, initialvalue);
   return (
     <>
       <p>{state}</p>
@@ -31,4 +31,3 @@ function Counter() {
   );
 }
 export default Counter;
-// 455787628094;
