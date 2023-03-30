@@ -4,16 +4,13 @@ import { createContext, useState } from "react";
 import CompD from "./CompD";
 import CompA from "./CompA";
 import CompE from "./CompE";
-import Slider from "./useReducer/slider";
 import Counter from "./useReducer/reduce1";
-import CircularProgress from "./useReducer/slider1";
 import ComplexComponent from "./useReducer/useReducer";
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
+import { USR } from "./useReducer/USR";
 const Value = createContext();
-
 function App(props) {
   const Name = "Pablu-Pandey";
-
   const [state, setState] = useState({
     name: "Ram Yadav",
     profession: "Software engineer",
@@ -35,21 +32,13 @@ function App(props) {
       <br />
       <br />
       <br />
-      <Slider />
-      <br />
-      <br />
-      <br />
-      <br />
-      <CircularProgress />
-      <br />
-      <br />
-      <br />
       <ComplexComponent />
       <br />
       <br />
       <br />
+      <USR />
     </div>
   );
-}
+};
 export default App;
-export { Value };
+export {Value};
