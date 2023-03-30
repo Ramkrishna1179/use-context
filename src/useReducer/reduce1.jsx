@@ -24,8 +24,7 @@ function Counter() {
         onClick={() => {
           dispatch({ type: "decrement" });
         }}
-      >
-        Decrement
+      >    Decrement
       </button>
     </>
   );
